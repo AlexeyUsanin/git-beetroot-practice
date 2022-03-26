@@ -1,0 +1,100 @@
+#text {
+  color: rgba(114, 143, 72, .5);
+}
+
+html {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2:hover {
+  text-transform: uppercase;
+}
+
+.main {
+  font-size: 1em;
+  padding: 20px;
+}
+
+.main p {
+  font-size: 100%;
+}
+
+.main h2 {
+  font-size: 1.5em;
+}
+
+.main h1 {
+  font-size: 1rem;
+}
+
+.main h3 {
+  font-size: 1vw;
+}
+
+.link {
+  color: darkmagenta;
+}
+
+
+.link:hover {
+  font-size: 22px;
+  color: orangered;
+  text-decoration: none;
+}
+
+.link:active {
+  text-decoration: line-through;
+  color: darkkhaki;
+}
+
+.link:visited {
+  color: blue;
+  text-decoration: wavy;
+}
+
+.link:visited:hover {
+  color: orangered;
+}
+
+
+.link:focus {
+  text-transform: uppercase;
+}
+
+.input:focus {
+  outline: 3px solid red;
+}
+
+.box p:first-child {
+  text-decoration: underline;
+}
+
+.box p:last-child {
+  text-decoration: line-through;
+}
+
+.box p:nth-child(odd) {
+  color: red;
+}
+
+.radio, .checkbox {
+  margin: 10px;
+}
+
+.radio:checked, .checkbox:checked {
+  margin: 15px;
+}
