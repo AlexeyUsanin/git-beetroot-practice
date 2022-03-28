@@ -1,0 +1,116 @@
+body {
+
+  color: #070707;
+  line-height: 25px;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  transition: all 0.3s ease-in;
+}
+
+
+.heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 64px;
+}
+
+.container {
+  max-width: 943px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #828282;
+  padding: 23px 0;
+  margin-bottom: 34px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.list .nav-item {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+.nav .link {
+  text-decoration: none;
+  color: #070707;
+}
+
+.bg-gray {
+  background: #F6F6F6;
+  padding: 100px 0;
+}
+
+.content {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.title + p {
+  margin-top: 12px;
+}
+
+.nav > .link {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.list ~ .link {
+  text-decoration: underline;
+}
+
+.link[href="home"] {
+  color: brown;
+}
+
+.link[href="about"] {
+  color: yellow;
+}
+
+.link[href="skills"] {
+  color: green;
+}
+
+.link[href="portfolio"] {
+  color: blue;
+}
+
+.input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+}
+
+.input[type="checkbox"]:checked + p {
+  color: red;
+  text-decoration: line-through;
+}
+
+.link:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 700;
+  color: blue;
+}
