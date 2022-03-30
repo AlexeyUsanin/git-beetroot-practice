@@ -8,10 +8,10 @@ body {
 img {
   width: 100%;
 }
-
+/*
 * {
   transition: all 0.3s ease-in;
-}
+} */
 
 
 .heading {
@@ -113,4 +113,50 @@ img {
   text-decoration: underline;
   font-weight: 700;
   color: blue;
+}
+
+.shopping-list {
+  list-style: none;
+}
+
+.shopping-list-item {
+  background: #88839E;
+}
+
+.item-text {
+  display: inline;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.shopping-list-item:nth-child(odd) {
+  background-color: #9B96AC;
+}
+
+.item-label {
+  padding: 12px;
+  display: block;
+
+}
+
+.item-checkbox {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.shopping-list-item:hover {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.item-checkbox:checked + .item-text .item-desc {
+  text-decoration: line-through;
+}
+
+.item-desc::after {
+  content: ' (for the next lessons about CSS)';
+  width: 12px;
+  height: 12px;
+  font-size: 11px;
 }
