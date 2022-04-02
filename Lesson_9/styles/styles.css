@@ -4,7 +4,7 @@
 
 body {
   font-size: 18px;
-  color: #2F281E;
+  color: #222F281E;
   font-family: 'Roboto';
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-  background: green;
+  background: #FF9900;
   border-radius: 4px;
   color: #fff;
   line-height: 24px;
@@ -78,7 +78,48 @@ body {
   padding: 15px 40px;
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid #BCD0E5;
+  color: #173A56;
+}
+
 .backdrop::after {
   background: url(../img/portfolio_1.png) no-repeat center/contain;
   height: 800px;
+}
+
+/* /////////////////HEADER STYLE/////////////////////// */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-list__link {
+  color: #2F281E;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 14px;
 }

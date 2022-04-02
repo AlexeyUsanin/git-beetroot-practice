@@ -1,0 +1,54 @@
+body {
+  background-color: yellow;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 40px 100px;
+  width: 460px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:nth-child(1) {
+  order: 3;
+}
+
+.item:nth-child(3) {
+  order: 1;
+}
+
+.item:nth-child(2) {
+  height: 500px;
+  order: 2;
+}
+
+.item-price {
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: #02995b;
+  font-weight: bold;
+}
+
+.item-title {
+  font-size: 56px;
+  color: #333333;
+  margin: 0;
+}
+
+.item-descr {
+  font-size: 20px;
+  margin: 0;
+}
