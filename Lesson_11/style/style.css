@@ -1,0 +1,100 @@
+body {
+  font-size: 18px;
+  font-family: 'Lato';
+  font-weight: 900;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.font-size-large {
+  font-size: 20px;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.line-height-normal {
+  line-height: 1.5;
+}
+
+.letter-spacing {
+  letter-spacing: 1px;
+}
+
+.word-spacing {
+  word-spacing: 10px;
+}
+
+.text-decoration-over {
+  text-decoration-line: overline;
+}
+
+.text-decoration-under {
+  text-decoration-line: underline;
+}
+
+.text-decoration-wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: darkmagenta;
+  text-decoration-thickness: 2px;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-color {
+  color: #ae35ae;
+}
+
+.text-transform-capitalize{
+  text-transform: capitalize;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 4px #ae3333;
+}
+
+.text-indent {
+  text-indent: 30px;
+}
+
+.white-space {
+  white-space: nowrap;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.word-break {
+  width: 500px;
+  word-break: break-all;
+}
+
+.font-variant {
+  font-variant: petite-caps;
+}
