@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>CSS Transform & Position</title>
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <h1 class="title">
+        who we are
+      </h1>
+      <p class="sub-title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card transformY">
+        <div class="card-image">
+          <img src="img/01.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Alex Cutter
+          </div>
+          <div class="card-subtitle">Developer</div>
+        </div>
+      </div>
+      <div class="card rotate">
+        <div class="card-image">
+          <img src="img/02.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Elena Simpson
+          </div>
+          <div class="card-subtitle">Artist</div>
+        </div>
+      </div>
+      <div class="card scale">
+        <div class="card-image">
+          <img src="img/03.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Lily Allen
+          </div>
+          <div class="card-subtitle">Graphic Designer</div>
+        </div>
+      </div>
+      <div class="card skew">
+        <div class="card-image">
+          <img src="img/01.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            John Handson
+          </div>
+          <div class="card-subtitle">Lead Designer</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="img/01.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Alex Cutter
+          </div>
+          <div class="card-subtitle">Developer</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="img/02.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Elena Simpson
+          </div>
+          <div class="card-subtitle">Artist</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="img/03.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            Lily Allen
+          </div>
+          <div class="card-subtitle">Graphic Designer</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="img/01.png" alt="person 1">
+          <div class="card-overlay">
+            <div class="card-icons">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-descr">
+          <div class="card-title">
+            John Handson
+          </div>
+          <div class="card-subtitle">Lead Designer</div>
+        </div>
+      </div>
+    </div>
+    <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+  </main>
+</body>
+</html>
