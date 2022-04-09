@@ -1,0 +1,155 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+.title {
+  text-align: center;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content {
+  display: flex;
+  gap: 30px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  width: 50%;
+}
+
+.form-input {
+  width: 100%;
+  border: 2px solid #b0b0ee;
+  border-radius: 4px;
+  min-height: 30px;
+  padding: 8px 10px;
+  font-size: 18px;
+  color: #5c4a4a;
+}
+
+.form-input.select {
+  background-color: transparent;
+  background-image: url('../img/chevron-down-solid.svg');
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 14px;
+  appearance: none;
+}
+
+.form-input::placeholder {
+  font-size: 14px;
+}
+
+.form-input.select option {
+  background-color: rgb(176 176 238 / 20%);
+}
+
+.form-input:focus {
+  box-shadow: 0px 0px 6px #9797be;
+  outline: none;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.checkbox-field input {
+  display: none;
+}
+
+.checkbox-field .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b0b0ee;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+}
+
+
+.checkbox-field.radio .checkmark {
+  border-radius: 50px;
+}
+
+.checkbox-field .checkmark::before {
+  content: '';
+  width: 4px;
+  height: 8px;
+  border-color: #b0b0ee;
+  border-style: solid;
+  border-width: 0px 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  display: none;
+}
+
+.checkbox-field.radio .checkmark::before  {
+  content: '';
+  display: none;
+  background-color: #b0b0ee;
+  border-radius: 50px;
+  width: 9px;
+  height: 9px;
+  top: 2px;
+  left: 3px;
+}
+
+.checkbox-field label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-field {
+  margin-bottom: 8px;
+}
+
+.checkbox-field input:checked + .checkmark::before {
+  display: block;
+}
+
+.btn {
+  border: 2px solid #b0b0ee;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #b0b0ee;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #000;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
