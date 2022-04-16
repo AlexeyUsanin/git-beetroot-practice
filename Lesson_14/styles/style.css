@@ -1,0 +1,50 @@
+.beetroot {
+  fill: purple;
+}
+
+.beetroot:hover {
+  fill: green;
+}
+
+
+.logo:hover {
+  fill-opacity: 0.45;
+}
+
+
+.card {
+  min-width: 200px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card__icon {
+  width: 150px;
+  height: 80px;
+}
+
+.card__title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card__descr {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.card--big {
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.card__title--underline {
+  text-decoration: underline;
+}
+
+.card--blue {
+  background-color: blue;
+}

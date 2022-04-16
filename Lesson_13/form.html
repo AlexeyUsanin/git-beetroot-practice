@@ -15,18 +15,33 @@
 
   <main class="container">
     <h1 class="title">User Form</h1>
-
+    <svg fill="#9797be"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/>
+    </svg>
     <div class="form-container">
       <form action="" class="form">
         <div class="form-content">
           <div class="form-column">
             <div class="form-field">
               <label class="form-label" for="first-name">First Name</label>
-              <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Enter your name">
+              <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Enter your name" autofocus  maxlength="10" minlength="3">
             </div>
             <div class="form-field">
               <label class="form-label" for="email">Email</label>
-              <input class="form-input" type="email" id="email" name="email" placeholder="Enter your email">
+              <input class="form-input" type="email" id="email" name="email" placeholder="Enter your email" >
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="age">Age</label>
+              <input class="form-input" type="number" min="18" max="99" id="age" name="age" placeholder="Enter your age" >
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="website">Website</label>
+              <input class="form-input" type="url" min="18" max="99" id="website" name="website" placeholder="Enter your website" >
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="search">Search</label>
+              <input class="form-input" type="search" id="search" name="search" placeholder="Enter your request" >
             </div>
             <div class="form-field">
               <label class="form-label">Skills</label>
@@ -39,14 +54,14 @@
               </div>
               <div class="checkbox-field">
                 <label for="css">
-                  <input type="checkbox" name="skills" id="css">
+                  <input type="checkbox" name="skills" id="css" checked>
                   <span class="checkmark"></span>
                   CSS
                 </label>
               </div>
               <div class="checkbox-field">
                 <label for="js">
-                  <input type="checkbox" name="skills" id="js">
+                  <input type="checkbox" name="skills" id="js" disabled checked>
                   <span class="checkmark"></span>
                   JavaScript
                 </label>
@@ -56,7 +71,7 @@
               <label class="form-label" for="email">Role</label>
               <div class="checkbox-field radio">
                 <label for="student">
-                  <input type="radio" name="role" id="student">
+                  <input type="radio" name="role" id="student" checked>
                   <span class="checkmark"></span>
                   Student
                 </label>
@@ -77,17 +92,31 @@
             </div>
             <div class="form-field">
               <label class="form-label" for="password">Password</label>
-              <input class="form-input" type="password" id="password" name="password">
+              <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required pattern="[!,@,#,$,%]{5}[a-z]{4}">
             </div>
             <div class="form-field">
               <label class="form-label" for="country">Country</label>
               <select class="form-input select" name="country" id="country">
-                <option selected value=""></option>
+                <option selected value="">Select</option>
                 <option value="ukraine">Ukraine</option>
                 <option value="usa">USA</option>
                 <option value="canada">Canada</option>
               </select>
             </div>
+            <div class="form-field">
+              <label class="form-label" for="file">Upload File</label>
+              <input class="form-input file-upload" type="file" id="file" name="file">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="date">Date</label>
+              <input class="form-input date" type="date" id="date" name="date">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="descr">Upload File</label>
+              <textarea class="form-input textarea" name="descr" id="descr"></textarea>
+            </div>
+
+            <a href="">Link</a>
           </div>
         </div>
 

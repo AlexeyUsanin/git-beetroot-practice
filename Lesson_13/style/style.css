@@ -45,7 +45,7 @@ body {
   width: 100%;
   border: 2px solid #b0b0ee;
   border-radius: 4px;
-  min-height: 30px;
+  min-height: 40px;
   padding: 8px 10px;
   font-size: 18px;
   color: #5c4a4a;
@@ -135,6 +135,10 @@ body {
   display: block;
 }
 
+.checkbox-field input:disabled + .checkmark {
+  opacity: 0.3;
+}
+
 .btn {
   border: 2px solid #b0b0ee;
   padding: 8px 20px;
@@ -142,6 +146,7 @@ body {
   background-color: #b0b0ee;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -152,4 +157,27 @@ body {
 .form-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.form-input.file-upload {
+  background: url(../img/camera-solid.svg) no-repeat 98% center /24px;
+  /* font-size: 0; */
+}
+
+::-webkit-file-upload-button {
+  /* display: none; */
+  border: 2px solid #b0b0ee;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 13px;
+  background: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.textarea:hover {
+  min-height: 200px;
+  /* resize: none; */
 }
