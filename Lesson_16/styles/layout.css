@@ -1,0 +1,15 @@
+.l-header {
+  position: fixed;
+}
+
+.l-footer {
+  padding: 12px;
+}
+
+.l-sidebar {
+  margin: 10px;
+}
+
+.l-section {
+  background-color: #fff;
+}
