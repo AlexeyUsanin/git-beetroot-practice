@@ -190,14 +190,14 @@
 
 // const question = +prompt('2 + 2 * 2');
 
-let question = null;
+// let question = null;
 
-do {
-  question = +prompt('2 + 2 * 2');
-  // if (question !== 6) {
-  //   alert('Incorrect!')
-  // }
+// do {
+//   question = +prompt('2 + 2 * 2');
+//   // if (question !== 6) {
+//   //   alert('Incorrect!')
+//   // }
 
-} while (question !== 6)
+// } while (question !== 6)
 
-console.log('Ok!')
+// console.log('Ok!')
