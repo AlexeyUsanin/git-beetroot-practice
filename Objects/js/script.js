@@ -94,13 +94,12 @@ rect.style.top = `${rectangle.y}px`;
 const cart = {
   table: 700,
   tv: 1000,
-
   addItem: function (name, price) {
     this[name] = price;
   },
   calcSum: function () {
 
-  }
+  },
 }
 
 cart.addItem('table', 300);
@@ -110,5 +109,45 @@ cart.calcSum()
 
 cart.totalSum;
 
-console.log(cart)
+console.log(cart);
 
+// {
+//   name: 'ivan',
+//   hasAccess: true,
+// }
+
+const car = {
+  model: 'Audi',
+  year: 2022,
+  avgSpeed: 60,
+  fuelAmount: 78,
+  showInfo: function() {
+    return `Car model ${this.model}, car year - ${this.year}`;
+  },
+  refuel: function(amount) {
+    this.fuelAmount = amount;
+  },
+  addDriver: function(driver) {
+    this.driver = driver;
+  },
+  calcTime: function(distance, driverName) {
+    if (this.driver.name === driverName && this.driver.hasAccess) {
+      console.log('Yeaah! Go! Go! ');
+
+      const restFuelAmount = 0;
+
+      if (restFuelAmount >= this.fuelAmount) {
+        const time = 0;
+
+        return time;
+      } else {
+        return 'Plz refuel car!'
+      }
+    } else {
+      return 'Have no access!';
+    }
+  }
+}
+
+car.addDriver('Stepan');
+console.log('car', car);
