@@ -130,18 +130,22 @@ const filterByAge = (arr, age) => arr.filter((el) => el.age > age);
 
 console.log('filterByAge --->', filterByAge(users, 61));
 
+
+const transformName = (el) => ({
+  ...el,
+  name: el.name.toLowerCase(),
+})
+
 ///// Map
 function toLowerCase(arr) {
-  return arr.map(function(el) {
-    return {
-      ...el,
-      // age: el.age,
-      // country: el.country,
-      // role: el.role,
-      name: el.name.toLowerCase(),
-    };
-  })
+  return arr.map(transformName);
 }
 
+const calcAge = (arr) => {
+  return arr.reduce(function(prev, current) {
+    return prev + current.age;
+  }, 0)
+}
 
-console.log('toLowerCase', toLowerCase(users))
+console.log('calcAge', calcAge(users))
+// console.log('toLowerCase', toLowerCase(users))

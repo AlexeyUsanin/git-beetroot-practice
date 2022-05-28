@@ -151,3 +151,15 @@ const car = {
 
 car.addDriver('Stepan');
 console.log('car', car);
+
+
+function Car(model, year) {
+  return {
+    this.model = model;
+    this.year = year;
+  }
+}
+
+const honda = new Car('honda', 2016);
+const bmw = new Car('bmw', 2019);
+const toyota = new Car('toyota', 2020);
