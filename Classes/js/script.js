@@ -48,7 +48,7 @@ class News {
   }
 }
 
-class Post extends News  {
+class Post extends News {
   constructor(title, description, date, tags = [], author) {
     super(title, description, date, tags);
     this.author = author;
@@ -87,7 +87,7 @@ for (let i = 0; i < 10; i++) {
   const randomNumber = getRandomNumber(0, tags.length - 1)
   const randomTag = tags.slice(0, randomNumber);
 
-  news.push(new News(`Title ${i + 1}`, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', `${date}/${month}/2022`, randomTag));
+  news.push(new News(`Title ${i + 1}`, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit culpa unde quisquam ex quibusdam impedit dolor sed debitis eligendi!', `${date}/${month}/2022`, randomTag));
 }
 
 class NewsFeed {
@@ -113,4 +113,4 @@ class NewsFeed {
 const newTwo = new News('Lorem ipsum', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, quod?', `12/5/2022`, ['html', 'css', 'js'])
 
 const newsFeed = new NewsFeed(news);
-console.log('news', news);
+// console.log('news', news);

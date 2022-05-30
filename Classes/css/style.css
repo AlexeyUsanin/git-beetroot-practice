@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list__item-title {
+  margin-bottom: 8px;
+}
+
+.list__item-title  + p {
+  margin-bottom: 8px;
+}
+
+.list__item-date {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.list__item-button {
+  margin-top: 8px;
+  border: 3px solid #5931dc;
+  border-radius: 8px;
+  padding: 4px 12px;
+  background: transparent;
+}
