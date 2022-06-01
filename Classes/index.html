@@ -11,15 +11,57 @@
 
   <div class="container">
     <h1 id="title" class="title">News Feed</h1>
-    <div>
+    <!-- <a href="/" class="link">Link</a> -->
+    <button type="button" id="show-form">Create News</button>
+    <div class="form-content">
+      <form action="" id="form">
+        <div class="form-row">
+          <label for="heading">Title</label>
+          <input type="text" name="heading" id="heading">
+        </div>
+        <div class="form-row">
+          <label for="description">Description</label>
+          <input type="text" name="description" id="description">
+        </div>
+        <p>Tags</p>
+        <div class="form-row">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="tags" id="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="tags" id="css">
+            <label for="js">JS</label>
+            <input type="checkbox" name="tags" id="js">
+            <label for="tech">Tech</label>
+            <input type="checkbox" name="tags" id="tech">
+            <label for="science">Science</label>
+            <input type="checkbox" name="tags" id="science">
+         </div>
+        <div class="form-row">
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
       <ul class="list" id="news-list">
 
       </ul>
-      <div id="post">
+      <div id="post" class="post">
 
       </div>
     </div>
   </div>
+
+  <!-- <div id="div1">
+    DIV 1
+    <div id="div2">
+      DIV 2
+
+      <div id="div3">
+        DIV 3
+
+      </div>
+    </div>
+  </div> -->
 
   <script src="./js/script.js"></script>
   <script src="./js/dom.js"></script>
