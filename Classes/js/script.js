@@ -76,10 +76,8 @@ class Post extends News {
 
 const post = new Post('Lorem ipsum', 'Distinctio, quod?', '28/05/2022', ['html', 'css', 'js'], 'John Doe');
 
-console.log('post', post)
 const newOne = new News('Lorem ipsum', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, quod?', `12/5/2022`, ['html', 'css', 'js'])
 
-console.log('newOne', newOne)
 
 for (let i = 0; i < 10; i++) {
   const date = getRandomNumber(1, 31);
