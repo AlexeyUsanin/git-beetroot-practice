@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.accordion {
+  max-width: 600px;
+}
+
+.accordion__item {
+  padding: 16px;
+  background: #808bb7;
+  border: 1px solid;
+}
+
+.accordion__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.accordion__content {
+  display: none;
+  padding-top: 16px;
+}
