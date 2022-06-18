@@ -1,5 +1,7 @@
 const request = fetch('https://jsonplaceholder.typicode.com/users');
-// console.log('request', request)
+
+const API_KEY = '045fa3048d68107b3e16130861ad8e7a';
+const API_URL = 'https://api.themoviedb.org/3';
 
 request.then(function (response) {
   console.log('response', response)
@@ -36,10 +38,36 @@ request.then(function (response) {
 })
 
 
-function makeSearch(value) {
-  fetch(`https://api.themoviedb.org/3/search/movie?api_key=045fa3048d68107b3e16130861ad8e7a&query=${value}&page=2`)
+function makeSearch(value, page) {
+  fetch(`${API_URL}/search/movie?api_key=${API_KEY}&query=${value}&page=${page}`)
     .then(function () {
 
   })
-
 }
+
+
+const fetchMovies = (query, region = 'UA') => {
+  fetch(`${API_URL}/movie/${query}?api_key=${API_KEY}&region=${region}`)
+    .then(response => response.json())
+    .then(json => {
+      const list = document.createElement('ul');
+      const p = document.createElement('p');
+
+      json.results.forEach(film => {
+        const listItem = document.createElement('li');
+
+        listItem.innerText = `Name: ${film.title}; Release date: ${film.release_date}`;
+        list.append(listItem);
+      })
+
+      p.innerText = `Total total pages: ${json.total_pages}; Total results: ${json.total_results}`
+
+      document.body.append(list);
+      document.body.append(p);
+    })
+}
+
+fetchMovies('popular', 'US');
+fetchMovies('top_rated');
+fetchMovies('upcoming');
+
