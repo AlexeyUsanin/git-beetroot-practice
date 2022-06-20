@@ -303,15 +303,68 @@ const styles = [
   }
 ]
 
+const panel = document.querySelector('#panel');
+
+
 function initMap() {
   const point = { lat: 49.51492775864302, lng: 29.14414489374044 };
   const map = new google.maps.Map(document.getElementById("map"), {
     center: point,
-    zoom: 15,
+    zoom: 10,
     styles
   });
+  const renderOptions = {
+    panel,
+    polylineOptions: {
+      strokeOpacity: 0,
+      fillOpacity: 0,
+      icons: [{
+        repeat: '20px',
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          strokeColor: "#FF0000",
+          strokeOpacity: 1.0,
+          strokeWeight: 2,
+        }
+      }]
+    },
+  };
 
+
+  const directionsService = new google.maps.DirectionsService();
+  const directionsRenderer = new google.maps.DirectionsRenderer();
   const image = "icons/map-location-dot-solid.svg";
+
+  directionsRenderer.setMap(map);
+
+  const form = document.querySelector('#form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const from = formData.get('from');
+    const to = formData.get('to');
+    const travelMode = formData.get('travel_mode');
+
+    directionsService.route({
+      origin: {
+        query: from
+      },
+      destination: {
+        query: to
+      },
+      travelMode,
+    }).then(response => {
+      directionsRenderer.setDirections(response);
+      directionsRenderer.setOptions(renderOptions);
+
+      panel.classList.add('active');
+
+    }).catch((e) => window.alert("Directions request failed due to " + status));
+
+  });
+
 
   new google.maps.Marker({
     position: point,

@@ -10,6 +10,54 @@
 <body>
 
   <div id="map"></div>
+  <div id="panel" class="panel"></div>
+  <div class="container">
+    <form action="" class="form" id="form">
+      <div class="form__row">
+        <div>
+          <label for="from">From</label>
+          <select name="from" id="from">
+            <option value="Cherkasy">Cherkasy</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Zhytomyr">Zhytomyr</option>
+          </select>
+        </div>
+        <div>
+          <label for="to">To</label>
+          <select name="to" id="to">
+            <option value="Mykolaiv">Mykolaiv</option>
+            <option value="Odesa">Odesa</option>
+            <option value="Kharkiv">Kharkiv</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="form__row">
+        <div>
+          <input type="radio" id="bicycling" name="travel_mode" value="BICYCLING">
+          <label for="bicycling">Bicycling</label>
+        </div>
+        <div>
+          <input type="radio" id="driving" name="travel_mode" value="DRIVING">
+          <label for="driving">Driving</label>
+          </div>
+        <div>
+          <input type="radio" id="transit" name="travel_mode" value="TRANSIT">
+          <label for="transit">Transit</label>
+          </div>
+        <div>
+        <div>
+          <input type="radio" id="walking" name="travel_mode" value="WALKING">
+          <label for="walking">Walking</label>
+        </div>
+        </div>
+      </div>
+      <div class="form__row">
+        <button type="submit">GO!</button>
+      </div>
+
+    </form>
+  </div>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJrFNNdyUcco5-uJHaj3ce8R137x5O1K4&callback=initMap"></script>
   <script src="./js/script.js"></script>
