@@ -1,0 +1,89 @@
+:root {
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  /* --animate-repeat: 2; */
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container.top {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) 1.5fr;
+  gap: 56px;
+}
+
+.grid-container.bottom {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-item--big {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: padding 0.5s ease-out 0.5s;
+}
+
+.grid-item--big:hover {
+  /* margin-left: 50px; */
+  padding: 30px;
+  /* transform: scale(1.1); */
+  /* transition: transform 1s; */
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 5s;
+  /* animation-iteration-count: 1; */
+  animation-delay: 2s;
+  border: 5px solid;
+}
+
+.rotate:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform:  scale(0) rotate(0);
+    opacity: 0;
+    border-color: red;
+  }
+  25% {
+    opacity: 0.25;
+    border-color: blue;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(180deg);
+    border-color: orange;
+  }
+  75% {
+    opacity: 0.75;
+    border-color: pink;
+  }
+  100% {
+    transform:  scale(1) rotate(360deg);
+    opacity: 1;
+    border-color: green;
+
+  }
+}

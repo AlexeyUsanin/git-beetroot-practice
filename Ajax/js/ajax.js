@@ -39,15 +39,16 @@ request.then(function (response) {
 
 
 function makeSearch(value, page) {
-  fetch(`${API_URL}/search/movie?api_key=${API_KEY}&query=${value}&page=${page}`)
+  fetch(`${API_URL}/search/movie?api_key=${API_KEY}&query=${value}&page=${3}`)
     .then(function () {
 
   })
 }
 
+const input = document.querySelector('.input');
 
 const fetchMovies = (query, region = 'UA') => {
-  fetch(`${API_URL}/movie/${query}?api_key=${API_KEY}&region=${region}`)
+  fetch(`${API_URL}/movie/${query}?api_key=${API_KEY}&region=${region}&query=${input.value}`)
     .then(response => response.json())
     .then(json => {
       const list = document.createElement('ul');
