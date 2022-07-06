@@ -1,38 +1,40 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import header from './header';
-
-// const footer = React.createElement('footer');
-// const main = React.createElement('main', null, header, footer);
-
-const main = (
-  <main>
-    {header}
-    <footer>
-      <h2>Footer</h2>
-    </footer>
-  </main>
-);
+reportWebVitals();
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(main);
+const user = {
+  name: 'sdfsdf',
+  age: 56,
+  address: {
+    city: 'dfdfd',
+  }
+}
 
-console.log('main', main);
+const { name, age, address: { city } } = user;
+
+const arr = [1, 2, 3, 4, 5];
+
+console.log('name', name);
+console.log('age', age);
+console.log('city', city);
+
+const [one, two, three, four] = arr;
+
+console.log('one', one);
+console.log('two', two)
+console.log('three', three)
