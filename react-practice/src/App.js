@@ -1,22 +1,12 @@
-import './App.css';
-import Greeting from './components/Greeting';
-import Heading from './components/Heading';
-
-const time = new Date().getHours();
+import Layout from './Layout/Layout';
+import Homepage from './pages/Homepage';
+import './styles/main.scss';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Greeting name="Petro" hour={time}>
-          <Heading>
-            Heading
-          </Heading>
-        </Greeting>
-      </header>
-
-
-    </div>
+    <Layout>
+      <Homepage />
+    </Layout>
   );
 }
 

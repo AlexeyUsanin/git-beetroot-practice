@@ -1,7 +1,7 @@
 
 import Heading from "./Heading";
 
-const Greeting = ({ name, hour, children }) => {
+const Greeting = ({ name, hour, children, show }) => {
   let greeting = '';
 
   if (hour >= 6 && hour <= 12) {
@@ -12,11 +12,16 @@ const Greeting = ({ name, hour, children }) => {
     greeting = 'night';
   }
 
+  console.log('hour', hour)
   return (
     <div>
-      <Heading>
-        Good {greeting}, {name}
-      </Heading>
+      {show ? (
+        <Heading>
+          Good {greeting}, {name}
+        </Heading>
+      ) : (
+        <p>Nothing to show</p>
+      )}
 
       {children}
 
