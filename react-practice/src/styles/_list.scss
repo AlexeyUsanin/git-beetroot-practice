@@ -1,0 +1,41 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &:hover {
+    .card__overlay {
+      opacity: 1;
+    }
+  }
+
+  &__overlay {
+    transition: opacity 0.5s;
+    opacity: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0 ,0 , 0.6);
+    padding: 24px;
+    color: #fff;
+    font-size: 18px;
+  }
+}
