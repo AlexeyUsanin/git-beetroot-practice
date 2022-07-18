@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import List from "../components/List";
+import List from "../components/List.hook";
 
 class Homepage extends React.Component {
   constructor() {
     super()
     this.state = {
-      value: ''
+      value: 'cat'
     }
   }
 

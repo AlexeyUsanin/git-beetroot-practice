@@ -15,12 +15,19 @@ class List extends React.Component {
     this.setState({ loading: true })
 
     fetch(`https://api.pexels.com/v1/search?query=${this.props.value}&per_page=12`, {
+      method: 'GET',
       headers: {
-        Authorization: '563492ad6f9170000100000160238dad309c4839acdead7607ed24d3',
-      }
+        'Authorization': '563492ad6f9170000100000160238dad309c4839acdead7607ed24d3',
+        // 'Access-Control-Allow-Origin': '*'
+      },
+      // mode: 'no-cors'
     })
       .then(response => response.json())
       .then(data => this.setState({ data, loading: false }));
+  }
+
+  componentDidMount() {
+    this.makeRequest()
   }
 
   componentDidUpdate(prevProps) {
