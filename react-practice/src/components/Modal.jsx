@@ -1,4 +1,6 @@
-const Modal = ({ src, alt, show, onClose }) => {
+import { Link } from "react-router-dom";
+
+const Modal = ({ src, alt, show, onClose, photoId }) => {
   return (
     show && <div className="popup">
       <div className="popup__overlay">
@@ -8,6 +10,7 @@ const Modal = ({ src, alt, show, onClose }) => {
           </button>
           <h3>{alt}</h3>
           <img className="popup__content-img" src={src} alt={alt} />
+          <Link to={`photos/${photoId}`}>Show page</Link>
         </div>
 
       </div>

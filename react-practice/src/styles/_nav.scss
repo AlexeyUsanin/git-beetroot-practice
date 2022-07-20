@@ -13,5 +13,11 @@
   &__link {
     text-decoration: none;
     font-size: 18px;
+    padding: 10px;
+
+    &.active {
+      border: 2px solid;
+      border-radius: 8px;
+    }
   }
 }

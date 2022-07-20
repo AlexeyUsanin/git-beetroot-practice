@@ -1,4 +1,7 @@
+import { NavLink } from "react-router-dom";
+
 const navItems = [
+  { label: 'Home', path: '/' },
   { label: 'Photos', path: '/photos' },
   { label: 'Videos', path: '/videos' },
   { label: 'Collections', path: '/collections' }
@@ -7,9 +10,9 @@ const navItems = [
 const NavItem = ({ children, path }) => {
   return (
     <li className="navigation__list-item">
-      <a className="navigation__link" href={path}>
+      <NavLink className="navigation__link" to={path}>
         {children}
-      </a>
+      </NavLink>
     </li>
   )
 }

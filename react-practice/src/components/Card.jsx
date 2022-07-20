@@ -26,7 +26,7 @@ class Card extends React.Component {
   }
 
   render() {
-    const { src, alt, photographer, url } = this.props;
+    const { src, alt, photographer, id } = this.props;
 
     return (
       <>
@@ -43,7 +43,7 @@ class Card extends React.Component {
             <img className="card__img" src={src.medium} alt={alt} />
           </div>
         </div>
-        <Modal show={this.state.open} src={src.original} alt={alt} onClose={() => this.handleCloseModal()} />
+        <Modal photoId={id} show={this.state.open} src={src.original} alt={alt} onClose={() => this.handleCloseModal()} />
       </>
     )
   }

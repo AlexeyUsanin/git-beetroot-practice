@@ -9,19 +9,18 @@ const List = ({value}) => {
   useEffect(() => {
     setLoading({loading: true})
 
-    fetch(`https://api.pexels.com/v1/search?query=${value}&per_page=12`, {
-      method: 'GET',
-      headers: {
-        'Authorization': '563492ad6f9170000100000160238dad309c4839acdead7607ed24d3',
-      },
-    })
-      .then(response => response.json())
-      .then(data => {
-        setData(data)
-        setLoading(false)
-      });
+      fetch(`https://api.pexels.com/v1/search?query=${value}&per_page=12`, {
+        method: 'GET',
+        headers: {
+          'Authorization': '563492ad6f9170000100000160238dad309c4839acdead7607ed24d3',
+        },
+      })
+        .then(response => response.json())
+        .then(data => {
+          setData(data)
+          setLoading(false)
+        });
   }, [value])
-
 
   // console.log('loading', loading);
   console.log('data', data);
@@ -43,6 +42,7 @@ const List = ({value}) => {
             photographer={photographer}
             src={src}
             alt={alt}
+            id={id}
           />
         ))}
       </div>
